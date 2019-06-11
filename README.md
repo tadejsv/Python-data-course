@@ -15,7 +15,17 @@ In this course I plan to teach
 
 ## How to start
 
-To start, you will need to 
+To start, you will need to
+0. Have a conda environemnt called `data`, which has jupyter lab installed. If you don't even have conda installed, just type these commands one-by-one in the command line (you will learn later what they do)
+```
+curl https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -o miniconda.sh
+chmod +x miniconda.sh
+./miniconda.sh -b -p ~/miniconda3
+rm ./miniconda.sh
+echo ". ~/miniconda3/etc/profile.d/conda.sh" >> ~/.bashrc
+. ~/.bashrc
+conda create -n data jupyterlab
+```
 1. Fork this repository
 2. Clone the forked repository to your computer. To do this, 
     - go to the github page of your fork, click on the "Clone or download" button and copy the link
@@ -24,9 +34,9 @@ To start, you will need to
     cd ~/Documents
     git clone LINK-YOU-COPIED-FROM-GITHUB
 ```
-3. Activate the base conda environment (which should have Jupyter lab installed), and run Jupyter lab
+3. Activate the `data` conda environment (which should have Jupyter lab installed), and run Jupyter lab
 ```
-source activate
+conda activate data
 jupyter-lab
 ```
 4. Now select the first notebook (`0-Introduction.ipynb`) in Jupyter Lab and you can start working!
