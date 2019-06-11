@@ -16,7 +16,7 @@ In this course I plan to teach
 ## How to start
 
 To start, you will need to
-0. Have a conda environemnt called `data`, which has jupyter lab installed. If you don't even have conda installed, just type these commands one-by-one in the command line (you will learn later what they do)
+1. (actually 0): Have a conda environemnt called `data`, which has jupyter lab installed. If you don't even have conda installed, just type these commands one-by-one in the command line (you will learn later what they do)
 ```
 curl https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -o miniconda.sh
 chmod +x miniconda.sh
